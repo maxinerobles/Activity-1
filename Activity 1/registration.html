@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="registration.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Register Here!</h2>
+    <form action="registration.php" method="post" onsubmit="return validateForm()">
+        
+        <div class="input-container">
+            <input type="email" name="email" required placeholder=" ">
+            <label>Email</label>
+        </div>
+
+        <div class="input-container">
+            <input type="password" id="password" name="password" required placeholder=" ">
+            <label>Password</label>
+        </div>
+
+        <div class="input-container">
+            <input type="password" id="confirm_password" name="confirm_password" required placeholder=" ">
+            <label>Confirm Password</label>
+        </div>
+
+        <button type="submit">Register</button>
+    </form>
+</div>
+
+</body>
+</html>
